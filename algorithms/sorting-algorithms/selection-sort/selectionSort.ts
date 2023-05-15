@@ -1,5 +1,4 @@
 export const selectionSort = (numbers: number[]): number[] => {
-  console.log([...numbers]);
   let min, temp;
 
   for (let i = 0; i < numbers.length; i++) {
@@ -14,6 +13,5 @@ export const selectionSort = (numbers: number[]): number[] => {
     numbers[i] = temp;
   }
 
-  console.log(numbers);
   return numbers;
 };
