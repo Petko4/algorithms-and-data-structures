@@ -1,3 +1,4 @@
+import { bubbleSort } from "./bubble-sort/bubbleSort";
 import { selectionSort } from "./selection-sort/selectionSort";
 
 const ARRAY_SIZE = 10;
@@ -8,7 +9,11 @@ describe("Sorting Algorithms", () => {
   const sortedRandomNumbers = [...randomNumbers].sort((a, b) => a - b);
 
   test("Selection sort", () => {
-    expect(selectionSort(randomNumbers)).toEqual(sortedRandomNumbers);
+    expect(selectionSort([...randomNumbers])).toEqual(sortedRandomNumbers);
+  });
+
+  test("Bubble sort", () => {
+    expect(bubbleSort([...randomNumbers])).toEqual(sortedRandomNumbers);
   });
 });
 
