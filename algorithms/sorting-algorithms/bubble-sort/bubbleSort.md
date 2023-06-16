@@ -7,3 +7,5 @@ Time complexity - $O(n^2)$
 Stable - yes
 
 Speed - very slow
+
+![Bubble sort](https://www.w3resource.com/w3r_images/bubble-short.png)
